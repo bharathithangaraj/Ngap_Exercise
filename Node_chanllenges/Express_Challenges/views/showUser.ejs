@@ -1,0 +1,21 @@
+<html>
+        <link rel="stylesheet" type="text/css" href="users.css">    
+    <body>
+            <fieldset>
+        <ol>
+            <li>  <b>UserName<b> : <%=data.username%> </li>
+            <li> <b>password<b> : <%=data.password%> </li>
+            <li> <b>email<b> : <%=data.email%> </li>
+            <li><b>Data Of Birth<b> : <%=data.DOB%> </li>
+        </ol>
+      
+        <br>
+        <br>
+        <br>
+    <a href='/users/edit/<%=data._id%>'> EDIT </a>
+    <form action='/users/delete/<%=data._id%>?_method=DELETE' method="POST">
+      <button type='submit' >DELETE</button>
+    </fieldset>
+        </form>
+    </body>
+</html>

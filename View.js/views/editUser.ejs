@@ -1,0 +1,16 @@
+<html>
+        <link rel="stylesheet" type="text/css" href="users.css">
+    <body>
+        <form action='/users/edit/<%=data._id%>?_method=PUT' method='POST'>
+        <fieldset>
+                <legend>EDIT USER</legend>
+            USER NAME : <input placeholder="Please Provide UserName" name="username" value='<%=data.username%>'> <br>
+            PASSWORD : <input type='password' placeholder="Please Provide Pasword" name="password" value='<%=data.password%>'> <br>
+            EMAIL : <input placeholder="Please Provide Email" name="email" value='<%=data.email%>'> <br>
+           DOB : <input placeholder="Please Provide DOB" name="DOB" value='<%=data.DOB%>'> <br> 
+            <!-- DOB:<input type="date" id="start" name="DOB" value="2018-07-22"> -->
+            <input type="submit" value="Submit">
+        </fieldset>
+        </form>
+    </body>
+</html>

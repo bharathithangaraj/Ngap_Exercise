@@ -1,0 +1,31 @@
+<html>
+        <link rel="stylesheet" type="text/css" href="users.css">
+    <body>
+        <ol>
+            
+            <fieldset>
+        <% for(var i=0; i<data.length; i++) {%>
+           
+                <ul>
+                  <li>  <b>UserName<b> : <%=data[i].username%> </li>
+                    <a href='/users/showUser/<%=data[i]._id%> '>More Details</a>
+                    <!-- <li> <b>password<b> : <%=data[i].password%> </li>
+                        <li> <b>email<b> : <%=data[i].email%> </li>
+                            <li><b>Data Of Birth<b> : <%=data[i].dob%> </li> -->
+
+                            </ul>
+
+           
+
+        <%}%>
+                </fieldset>
+        </ol>
+        <br>
+        <br>
+        <br>
+        <b><a href='/users/add/'>ADD USERS</a></b>
+
+    </body>
+
+
+</html>
